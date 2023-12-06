@@ -1,4 +1,4 @@
-# Welcome to Geoparser-Docker-API
+# Welcome to Mordecai3-Docker-API
 
 This repository provides a Dockerized version of Mordecai 3, a powerful neural geoparser and event geocoder developed by Andrew Halterman. Mordecai 3 leverages state-of-the-art techniques to accurately extract geographical information from text, making it an invaluable tool for location-based data analysis.
 
