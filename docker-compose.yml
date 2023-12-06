@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  elasticsearch:
+    image: elasticsearch:7.10.1
+    container_name: elasticsearch
+    environment:
+      - "discovery.type=single-node"
+    volumes:
+      - ./geonames_index/:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  mordecai3:
+    build: .
+    image: mordecai3_image
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./app/:/app
+    ports:
+      - 8080:8080
