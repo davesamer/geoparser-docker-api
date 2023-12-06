@@ -1,6 +1,23 @@
-## Mordecai3 as containerized API service
+# Welcome to Geoparser-Docker-API
 
-### How to use
+This repository provides a Dockerized version of Mordecai 3, a powerful neural geoparser and event geocoder developed by Andrew Halterman. Mordecai 3 leverages state-of-the-art techniques to accurately extract geographical information from text, making it an invaluable tool for location-based data analysis.
+
+## Credits
+The core geoparsing engine, Mordecai 3, is the creation of Andrew Halterman. For more details on the model and its accuracy, refer to the [Mordecai 3 paper](https://arxiv.org/abs/2303.13675).
+
+## Citation
+If you use Mordecai 3 in your work, please give proper credit to the developer by citing the following paper:
+
+```latex
+@article{halterman2023mordecai,
+      title={Mordecai 3: A Neural Geoparser and Event Geocoder}, 
+      author={Andrew Halterman},
+      year={2023},
+      journal={arXiv preprint arXiv:2303.13675}
+}
+
+
+## How to use
 
 1. Download the pre-built geonames_index and save the in the project directory
    https://drive.google.com/drive/folders/1h-iQY_y9A4IYUUdX8h-epGIVl4ZF_uu5?usp=drive_link
