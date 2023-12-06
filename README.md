@@ -15,7 +15,7 @@ If you use Mordecai 3 in your work, please give proper credit to the developer b
       year={2023},
       journal={arXiv preprint arXiv:2303.13675}
 }
-
+```
 
 ## How to use
 
