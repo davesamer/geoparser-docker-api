@@ -59,22 +59,3 @@ The output should look like this
   ]
 }
 ```
-
-#### Next steps:
-
-Deployment
-
-- Migrate to gitlab
-- API should read the file path and not the json file
-- Output should follow a certain standard (ask franz again); spans should be included
-- Create more tests
-
-Geoparser Development
-
-- Integrate mordecai2 (2)
-- Integrate geoparsepy (3)
-
-Fix bugs
-
-- Why does mordecai3 does not return any geoentities for some longer texts, although there clearly are geoentities in the text?
-- Fix Timeouts from elasticsearch - they are occuring somehow random.
