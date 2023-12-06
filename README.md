@@ -19,8 +19,10 @@ If you use Mordecai 3 in your work, please give proper credit to the developer b
 
 ## How to use
 
-1. Download the pre-built geonames_index and save the in the project directory
+1. Build the geonames index as described in https://github.com/openeventdata/es-geonames
+   Alternatively, you can download a pre-built geonames index from
    https://drive.google.com/drive/folders/1h-iQY_y9A4IYUUdX8h-epGIVl4ZF_uu5?usp=drive_link
+   Extract the folder and save it in project directory.
 
 2) Start the service with the following command
 
