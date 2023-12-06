@@ -35,20 +35,20 @@ docker compose up
 The following code shows an example how make request to the mordecai 3 API in python
 
 ```python
-    import requests
+import requests
 
 
-    item = {
-        "page": "test",
-        "title": "test title",
-        "time": "test time",
-        "author": "test author",
-        "content": "Austria & Germany are both really beautiful countries"
-    }
+item = {
+  "page": "test",
+  "title": "test title",
+  "time": "test time",
+  "author": "test author",
+  "content": "Austria & Germany are both really beautiful countries"
+}
 
-    URL = 'http://localhost:8080/geoparse/'
-    response = requests.post(URL, json=item)
-    results = response.json()
+URL = 'http://localhost:8080/geoparse/'
+response = requests.post(URL, json=item)
+results = response.json()
 
 ```
 
