@@ -1,0 +1,9 @@
+geonames_index
+data
+.vscode/
+__pycache__/
+.pytest_cache
+env_depreciated
+models
+
+

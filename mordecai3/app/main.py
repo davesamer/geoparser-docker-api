@@ -9,7 +9,7 @@ from elasticsearch_dsl import Search
 def make_conn():
     """the make_conn function from mordecai 3 needs to be overwritten so that mordecai can connect to elasticsearch"""
     kwargs = dict(
-        hosts=['http://elasticsearch'],
+        hosts=['http://elasticsearch_gp'],
         port=9200,
         use_ssl=False,
     )

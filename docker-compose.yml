@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-  elasticsearch:
+  elasticsearch_gp:
     image: elasticsearch:7.10.1
-    container_name: elasticsearch
+    container_name: elasticsearch_gp
     environment:
       - "discovery.type=single-node"
     volumes:
@@ -11,12 +11,33 @@ services:
     ports:
       - 9200:9200
 
+  mordecai2:
+    build: mordecai2/.
+    image: mordecai2_image
+    depends_on:
+      - elasticsearch_gp
+    volumes:
+      - ./mordecai2/app/:/app
+    ports:
+      - 8090:8080
+
   mordecai3:
-    build: .
+    build: mordecai3/.
     image: mordecai3_image
     depends_on:
-      - elasticsearch
+      - elasticsearch_gp
     volumes:
-      - ./app/:/app
+      - ./mordecai3/app/:/app
     ports:
       - 8080:8080
+
+  geoparser_api:
+    build: geoparser_api/.
+    image: geoparser_api_image
+    depends_on:
+      - mordecai2
+      - mordecai3
+    volumes:
+      - ./geoparser_api/app/:/app
+    ports:
+      - 8070:8080

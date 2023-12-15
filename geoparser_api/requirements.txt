@@ -1,0 +1,5 @@
+httpx
+pytest
+fastapi
+uvicorn[standard]
+requests
